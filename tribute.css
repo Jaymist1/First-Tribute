@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-color: #010B13;
+    --2nd-bg-color: #414a4c;
+    --main-text-color: #f0f8ff;
+    --2nd-text-color: #fffdd0;
+    --link-color: #fff8dc;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--2nd-bg-color);
+    margin: 20px;
+    padding: 15px;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.front_cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.front_cover .tribute_image img {
+    width: 22rem;
+    height: 22rem;
+    margin: 10px 10px 0 10px;
+    padding: 5px 5px 0 5px;
+    border-radius: 20px;
+}
+.front_cover p {
+    color: var(--2nd-text-color);
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: 0.025em;
+}
+.rest_article {
+    margin-right: 20px;
+    background: var(--bg-color);
+    margin: 15px;
+    padding: 1rem 5rem 10rem 5rem;
+    color: var(--main-text-color);
+    border-radius: 20px;
+}
+.first h2 {
+    color: var(--main-text-color);
+    margin: 20px;
+    padding: 5px;
+    font-size: 5rem;
+    text-decoration: underline 4px solid var(--link-color);
+    text-align: center;
+}
+.rest_article .first p {
+    margin: 16px;
+    font-size: 25px;
+    text-indent: 3em;
+    text-align: justify;
+    line-height: 1.7;   
+}
+.rest_article .second p{
+    margin: 16px;
+    font-size: 25px;
+    text-indent: 3em;
+    text-align: justify;
+    line-height: 1.7;
+}
+.rest_article .third p {
+    margin: 16px;
+    font-size: 25px;
+    text-indent: 3em;
+    text-align: justify;
+    line-height: 1.7;
+}
+.rest_article .finally {
+text-indent: 3em;
+}
+footer p {
+    font-size: 11px;
+    text-align: center;
+}
+@media screen and (max-width: 700px) {
+    body {
+        margin: 0 25px 0 25px;
+    }
+    .header h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .rest_article {
+        background: var(--bg-color);
+        margin: 15px;
+        padding: 1rem 3rem 8rem 3rem;
+        color: var(--main-text-color);
+        border-radius: 20px;
+    }    
+    .first h2 {
+        color: var(--main-text-color);
+        margin: 10px;
+        padding: 5px;
+        font-size: 3.5rem;
+        text-decoration: underline 4px solid var(--link-color);
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 550px) {
+    body {
+        margin: 5px;
+        padding: 2px;
+    }
+    .header h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .first h2 {
+        color: var(--main-text-color);
+        margin: 8px;
+        padding: 5px;
+        font-size: 1.6rem;
+        text-decoration: underline 2px solid var(--link-color);
+        text-align: center;
+    }
+    .rest_article {
+    padding: 10px 1rem 4rem 2rem;
+    }
+    .rest_article p {
+        margin: 10px;
+        font-size: 8px;
+        text-indent: 1.2em;
+        text-align: justify;
+        line-height: 0.5;     
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        margin: 3px;
+        padding: 3px;
+    }
+    .front_cover .tribute_image img {
+        width: 55vh;
+        height: 55vh;
+        margin: 10px 10px 0 10px;
+        padding: 5px 5px 0 5px;
+        border-radius: 20px;
+    }
+    .front_cover p {
+        color: var(--2nd-text-color);
+        margin-top: 6px;
+        padding-left: 15px;
+        font-size: 10px;
+        font-style: italic;
+
+    }
+    .rest_article .first p {
+        margin: 3px;
+        padding: 3px;
+        font-size: medium;
+        text-indent: 2.2em;
+        text-align: justify;
+    }
+    .rest_article .second p {
+        margin: 3px;
+        padding: 3px;
+        font-size: medium;
+        text-indent: 2.2em;
+        text-align: justify;
+    }
+    .rest_article .third p {
+        margin: 3px;
+        padding: 3px;
+        font-size: medium;
+        text-indent: 2.2em;
+        text-align: justify;
+    }
+    .rest_article {
+        padding: 10px 1rem 4rem 1rem;
+        }
+        .rest_article {
+            padding: 10px 1rem 4rem 1rem;
+            }
+}
